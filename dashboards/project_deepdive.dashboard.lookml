@@ -5,7 +5,7 @@
   elements:
   - title: YTD Costs
     name: YTD Costs
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: single_value
     fields: [gcp_billing_export.total_cost, gcp_billing_export.period_selected]
@@ -73,7 +73,7 @@
     height: 3
   - title: QTD Costs
     name: QTD Costs
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: single_value
     fields: [gcp_billing_export.total_cost, gcp_billing_export.period_selected]
@@ -142,7 +142,7 @@
     height: 3
   - title: MTD Costs
     name: MTD Costs
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: single_value
     fields: [gcp_billing_export.total_cost, gcp_billing_export.period_selected]
@@ -210,7 +210,7 @@
     height: 3
   - title: YTD Cost Trends
     name: YTD Cost Trends
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [gcp_billing_export.total_cost, gcp_billing_export.usage_start_month_name,
@@ -290,7 +290,7 @@
     height: 8
   - title: YTD Cost by Service
     name: YTD Cost by Service
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_pie
     fields: [gcp_billing_export.total_cost, gcp_billing_export.service__description]
@@ -357,7 +357,7 @@
     height: 8
   - title: Monthly Cost by Service
     name: Monthly Cost by Service
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [gcp_billing_export.usage_start_month, gcp_billing_export.total_cost,
@@ -456,7 +456,7 @@
     height: 2
   - title: Credit Breakdown
     name: Credit Breakdown
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_area
     fields: [gcp_billing_export.usage_start_month, gcp_billing_export__credits.total_amount]
@@ -532,7 +532,7 @@
       type: tag_list
       display: popover
       options: []
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     listens_to_filters: []
     field: gcp_billing_export.project__id
@@ -546,7 +546,7 @@
       type: tag_list
       display: popover
       options: []
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     listens_to_filters: []
     field: gcp_billing_export.service__description

@@ -103,7 +103,7 @@
     height: 3
   - title: Data Storage Units
     name: Data Storage Units
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [pricing.pricing_type, gcp_billing_export.usage_start_month, gcp_billing_export.total_cost]
@@ -169,7 +169,7 @@
     height: 7
   - title: Data Retrieval Units
     name: Data Retrieval Units
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [pricing.pricing_type, gcp_billing_export.usage_start_month, gcp_billing_export.total_cost]
@@ -235,7 +235,7 @@
     height: 7
   - title: Early Deletes Units
     name: Early Deletes Units
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [pricing.pricing_type, gcp_billing_export.usage_start_month, gcp_billing_export.usage__amount_in_calculated_units]
@@ -301,7 +301,7 @@
     height: 7
   - title: Operations Units
     name: Operations Units
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [pricing.pricing_type, gcp_billing_export.usage_start_month, gcp_billing_export.usage__amount_in_calculated_units]
@@ -367,7 +367,7 @@
     height: 7
   - title: Network Units
     name: Network Units
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [pricing.pricing_type, gcp_billing_export.usage_start_month, gcp_billing_export.usage__amount_in_calculated_units]
@@ -433,7 +433,7 @@
     height: 8
   - title: Data Retrieval Cost
     name: Data Retrieval Cost
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_column
     fields: [pricing.pricing_type, gcp_billing_export.usage_start_month, gcp_billing_export.total_cost]
@@ -499,7 +499,7 @@
     height: 7
   - title: Data Storage Cost
     name: Data Storage Cost
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_column
     fields: [pricing.pricing_type, gcp_billing_export.usage_start_month, gcp_billing_export.total_cost]
@@ -565,7 +565,7 @@
     height: 7
   - title: Early Deletes Cost
     name: Early Deletes Cost
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_column
     fields: [pricing.pricing_type, gcp_billing_export.usage_start_month, gcp_billing_export.total_cost]
@@ -631,7 +631,7 @@
     height: 7
   - title: Network Cost
     name: Network Cost
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_column
     fields: [pricing.pricing_type, gcp_billing_export.usage_start_month, gcp_billing_export.usage__amount_in_calculated_units]
@@ -697,7 +697,7 @@
     height: 8
   - title: Operations Cost
     name: Operations Cost
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_column
     fields: [pricing.pricing_type, gcp_billing_export.usage_start_month, gcp_billing_export.usage__amount_in_calculated_units]
@@ -772,7 +772,7 @@
       type: tag_list
       display: popover
       options: []
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     listens_to_filters: []
     field: gcp_billing_export.project__id

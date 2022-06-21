@@ -5,7 +5,7 @@
   elements:
   - title: YTD Costs
     name: YTD Costs
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: single_value
     fields: [gcp_billing_export.period_selected, gcp_billing_export.total_cost]
@@ -73,7 +73,7 @@
     height: 2
   - title: WTD Costs
     name: WTD Costs
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: single_value
     fields: [gcp_billing_export.period_selected, gcp_billing_export.total_cost]
@@ -141,7 +141,7 @@
     height: 2
   - title: MTD Costs
     name: MTD Costs
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: single_value
     fields: [gcp_billing_export.period_selected, gcp_billing_export.total_cost]
@@ -209,7 +209,7 @@
     height: 2
   - title: QTD Costs
     name: QTD Costs
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: single_value
     fields: [gcp_billing_export.period_selected, gcp_billing_export.total_cost]
@@ -287,7 +287,7 @@
   - name: COST VS CREDIT ANALYSIS
     title: COST VS CREDIT ANALYSIS
     merged_queries:
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: table
       fields: [gcp_billing_export.usage_start_week, gcp_billing_export.total_cost]
@@ -298,7 +298,7 @@
       limit: 500
       query_timezone: America/Los_Angeles
       join_fields: []
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: looker_column
       fields: [gcp_billing_export__credits.total_amount, gcp_billing_export.usage_start_week]
@@ -424,7 +424,7 @@
   - name: TOTAL CREDITS
     title: TOTAL CREDITS
     merged_queries:
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: table
       fields: [merge, gcp_billing_export__credits.total_amount]
@@ -436,7 +436,7 @@
           value_format_name: !!null ''}]
       query_timezone: America/Los_Angeles
       join_fields: []
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: table
       fields: [merge, gcp_billing_export.total_cost]
@@ -542,7 +542,7 @@
     title: PERCENT OF SPEND
     title_hidden: true
     merged_queries:
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: table
       fields: [gcp_billing_export.usage_start_week, gcp_billing_export.total_cost]
@@ -553,7 +553,7 @@
       limit: 500
       query_timezone: America/Los_Angeles
       join_fields: []
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: looker_column
       fields: [gcp_billing_export__credits.total_amount, gcp_billing_export.usage_start_week]
@@ -675,7 +675,7 @@
     height: 4
   - title: CREDIT USAGE BY PROJECT
     name: CREDIT USAGE BY PROJECT
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_bar
     fields: [gcp_billing_export__credits.total_amount, gcp_billing_export.project__name]
@@ -736,7 +736,7 @@
     height: 8
   - title: TOP BILLED PROJECTS
     name: TOP BILLED PROJECTS
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_waterfall
     fields: [gcp_billing_export.project__name, gcp_billing_export.total_cost]
@@ -802,7 +802,7 @@
   - name: SERVICE AREA
     title: SERVICE AREA
     merged_queries:
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: looker_grid
       fields: [gcp_billing_export.service__description, gcp_billing_export.total_cost]
@@ -851,7 +851,7 @@
       totals_color: "#808080"
       defaults_version: 1
       series_types: {}
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: table
       fields: [gcp_billing_export__credits.total_amount, gcp_billing_export.service__description]
@@ -901,7 +901,7 @@
   - name: SKU
     title: SKU
     merged_queries:
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: looker_grid
       fields: [gcp_billing_export.total_cost, gcp_billing_export.sku__description]
@@ -950,7 +950,7 @@
       totals_color: "#808080"
       defaults_version: 1
       series_types: {}
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: table
       fields: [gcp_billing_export__credits.total_amount, gcp_billing_export.sku__description]
@@ -1001,7 +1001,7 @@
   - name: AVAILABILITY REGION
     title: AVAILABILITY REGION
     merged_queries:
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: looker_grid
       fields: [gcp_billing_export.total_cost, gcp_billing_export.location__region]
@@ -1050,7 +1050,7 @@
       totals_color: "#808080"
       defaults_version: 1
       series_types: {}
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: table
       fields: [gcp_billing_export__credits.total_amount, gcp_billing_export.location__region]
@@ -1101,7 +1101,7 @@
   - name: BILLING ACCOUNT
     title: BILLING ACCOUNT
     merged_queries:
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: looker_grid
       fields: [gcp_billing_export.total_cost, gcp_billing_export.billing_account_id]
@@ -1150,7 +1150,7 @@
       totals_color: "#808080"
       defaults_version: 1
       series_types: {}
-    - model: _gcp_billing_block
+    - model: Looker_Demo_gcp_billing_block
       explore: gcp_billing_export
       type: table
       fields: [gcp_billing_export__credits.total_amount, gcp_billing_export.billing_account_id]
@@ -1200,7 +1200,7 @@
     height: 6
   - title: YEAR OVER YEAR SPEND
     name: YEAR OVER YEAR SPEND
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [gcp_billing_export.total_cost, gcp_billing_export.usage_start_month_name, gcp_billing_export.usage_start_year]

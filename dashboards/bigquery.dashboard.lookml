@@ -65,7 +65,7 @@
     height: 3
   - title: Analysis Unit
     name: Analysis Unit
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [gcp_billing_export.usage__amount_in_calculated_units, gcp_billing_export.usage_start_month,
@@ -123,7 +123,7 @@
     height: 7
   - title: Storage Unit
     name: Storage Unit
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [gcp_billing_export.usage__amount_in_calculated_units, gcp_billing_export.usage_start_month,
@@ -186,7 +186,7 @@
     height: 7
   - title: Streaming Unit
     name: Streaming Unit
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_line
     fields: [gcp_billing_export.usage__amount_in_calculated_units, gcp_billing_export.usage_start_month,
@@ -244,7 +244,7 @@
     height: 7
   - title: Analysis Cost
     name: Analysis Cost
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_column
     fields: [gcp_billing_export.usage_start_month, pricing.pricing_type, gcp_billing_export.total_cost]
@@ -306,7 +306,7 @@
     height: 7
   - title: Streaming Cost
     name: Streaming Cost
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_column
     fields: [gcp_billing_export.usage_start_month, pricing.pricing_type, gcp_billing_export.total_cost]
@@ -368,7 +368,7 @@
     height: 7
   - title: Storage Cost
     name: Storage Cost
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_column
     fields: [gcp_billing_export.usage_start_month, pricing.pricing_type, gcp_billing_export.total_cost]
@@ -439,7 +439,7 @@
       type: tag_list
       display: popover
       options: []
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     listens_to_filters: []
     field: gcp_billing_export.project__id

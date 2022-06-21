@@ -5,7 +5,7 @@
   elements:
   - title: YTD Sustained Use Discount
     name: YTD Sustained Use Discount
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: single_value
     fields: [gcp_billing_export.period_selected, gcp_billing_export__credits.total_sustained_use_discount]
@@ -35,7 +35,7 @@
     height: 4
   - title: YTD Committed Use Discount
     name: YTD Committed Use Discount
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: single_value
     fields: [gcp_billing_export.period_selected, gcp_billing_export__credits.total_committed_use_discount]
@@ -64,7 +64,7 @@
     height: 4
   - title: YTD Promotion Credits
     name: YTD Promotion Credits
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: single_value
     fields: [gcp_billing_export.period_selected, gcp_billing_export__credits.total_promotional_credit]
@@ -93,7 +93,7 @@
     height: 4
   - title: Cost and Credit Breakdown
     name: Cost and Credit Breakdown
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_column
     fields: [gcp_billing_export.usage_start_month, gcp_billing_export.total_cost,
@@ -159,7 +159,7 @@
     height: 7
   - title: Credit Distribution by Project
     name: Credit Distribution by Project
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_grid
     fields: [gcp_billing_export.project__name, gcp_billing_export__credits.total_amount]
@@ -219,7 +219,7 @@
     height: 13
   - title: Discount Breakdown
     name: Discount Breakdown
-    model: _gcp_billing_block
+    model: Looker_Demo_gcp_billing_block
     explore: gcp_billing_export
     type: looker_column
     fields: [gcp_billing_export.usage_start_month, gcp_billing_export__credits.type,
